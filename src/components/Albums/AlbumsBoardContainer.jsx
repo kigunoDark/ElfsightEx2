@@ -10,10 +10,16 @@ function AlbumsBoardContainer() {
       try {
         setIsLoading(true);
         let cards = await mainApi.getAlboms();
+
+        // Так-как альбомов всего 100  в принципе можно и так, загружает пару секунд на главную
+        for(let card of cards) {
+          let photos = await mainApi.getPhotos(1)
+          card.newVal = photos;
+        }
         setAlbums(cards);
-        /* Загрузка слишком быстрая, поэтому для демонстрации загрузочного меню,
-        на данной странице сделал загрузку через таймаут*/
-        setTimeout(() => setIsLoading(false), 1000);
+        
+        setIsLoading(false)
+    
       } catch (err) {
         console.log(err);
       }

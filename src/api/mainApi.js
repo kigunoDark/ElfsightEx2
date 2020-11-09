@@ -7,7 +7,9 @@ const instance = axios.create({
 
 export const mainApi = {
   getAlboms: () => {
-    return instance.get("/albums").then((alboms) => alboms.data);
+    return instance.get("/albums").then((alboms) => {
+      return alboms.data;
+    });
   },
   getPhotos: (albomId) => {
     return instance
