@@ -47,6 +47,12 @@
   background:  #87dedb;
 }
 
+@media (max-width: 1200px) {
+
+  .modal_customn_btn {
+    float: left;
+  }
+ }
 
 
 

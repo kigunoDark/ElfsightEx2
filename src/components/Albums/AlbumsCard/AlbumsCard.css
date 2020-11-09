@@ -1,57 +1,49 @@
-
-.albums_card {
+.albums_card  {
   position: relative;
-  width: 80%;
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  background: url('https://images.unsplash.com/photo-1502613374390-8da7aa532177?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80');
-  background-position: 100% 100%;
+  background: red;
+  text-align: center;
+  background: url('https://images.unsplash.com/photo-1581171388860-c49b6cf74dd9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1496&q=80') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
-  color: aliceblue;
-  font-weight: bold;
+  height: 40vh;
   border-radius: 8px;
-  transition: 0.5s;
+  color: white;
 }
 
-.albums_card:hover {
-  -webkit-box-shadow: 1px 6px 9px -2px rgba(0,0,0,0.75);
-  -moz-box-shadow: 1px 6px 9px -2px rgba(0,0,0,0.75);
-  box-shadow: 1px 6px 9px -2px rgba(0,0,0,0.75);
-}
 
 .albums_card__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+  opacity: 0;
   width: 100%;
   height: 100%;
   border-radius: 8px;
   background: rgba(20, 20, 20, 0.5);
   visibility: hidden;
-  opacity: 0;
   transition: color 0.5s ;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.albums_card__number {
-  padding: 26% 10%;
-  margin: 3%;
-  border-radius: 8px;
-  border: 2px solid white;
-  text-align: center; 
+.albums_card__overlay h3 {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding: 20px 0px;
+  width: 100%;
 }
 
-.albums_card__title {
-  text-align: center;
-    padding: 30% 0px;
-  opacity: 1;
-  visibility: visible;
-  text-transform: uppercase;
+.albums_card__title  {
   width: 90%;
-  margin: 0 auto;
+}
+
+.albums_card__overlay,
+.albums_card__title {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  text-transform: uppercase;
 }
 
 .albums_card:hover .albums_card__overlay  {
