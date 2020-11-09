@@ -1,0 +1,51 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  background: #f7fafa;
+  font-family: 'Poppins', sans-serif;
+}
+
+.text__uppercase {
+  text-transform: uppercase;
+}
+.container {
+  margin: 0 auto;
+  padding: 5% 0px;
+  width: 90%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.row .col {
+  flex-basis: 31%;
+  margin-bottom: 0.5rem;
+  margin-left: 20px;
+}
+
+@media (max-width: 1200px) {
+  .row  {
+    flex-wrap: wrap;
+  }
+
+  .row .col {
+    margin: 20px 0px;
+    margin-left: 5%;
+    flex-basis: 45%;
+  }
+}
+@media (max-width: 1000px) {
+  .row  {
+    flex-wrap: wrap;
+  }
+
+  .row .col {
+    margin: 20px 0px;
+    flex-basis: 100%;
+  }
+}
