@@ -1,7 +1,7 @@
 import React from 'react';
 import './AlbumsBoard.css';
 import AlbumsCard from './AlbumsCard/AlbumsCard';
-import Loder from './Loader/Loader';
+import Loder from '../Loader/Loader';
 function AlbumsBoard(props) {
   return  (
       <div>

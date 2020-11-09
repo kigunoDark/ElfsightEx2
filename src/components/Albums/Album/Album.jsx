@@ -1,7 +1,7 @@
 import React from 'react';
 import PhotoModalContainer from './PhotoCard/PhotoModal/PhotoModalContainer';
 import PhotoCard from './PhotoCard/PhotoCard';
-import Loader from '../Loader/Loader';
+import Loader from '../../Loader/Loader';
 import { Link } from 'react-router-dom';
 import './Album.css';
 

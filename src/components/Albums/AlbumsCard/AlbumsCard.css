@@ -1,6 +1,5 @@
 .albums_card  {
   position: relative;
-  background: red;
   text-align: center;
   background: url('https://images.unsplash.com/photo-1581171388860-c49b6cf74dd9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1496&q=80') no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -12,6 +11,11 @@
   color: white;
 }
 
+.albums_card:hover {
+  -webkit-box-shadow: 1px 6px 9px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 6px 9px -2px rgba(0,0,0,0.75);
+  box-shadow: 1px 6px 9px -2px rgba(0,0,0,0.75);
+}
 
 .albums_card__overlay {
   opacity: 0;
