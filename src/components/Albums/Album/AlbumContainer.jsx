@@ -38,10 +38,10 @@ function AlbumContainer() {
         setIsLoading(true);
         let album = await mainApi.getPhotos(albomId);
         setAlbum(album);
-        setTimeout(() => setIsLoading(false), 1000);
       } catch (err) {
         console.log(err);
       }
+      setIsLoading(false)
     })();
   },[]);
 

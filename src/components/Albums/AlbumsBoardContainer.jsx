@@ -27,7 +27,6 @@ function AlbumsBoardContainer() {
         setIsLoading(true);
         let cards = await mainApi.getAlboms();
         setAlbums(cards);
-        console.log(cards)
         setIsLoading(false)
     
       } catch (err) {
